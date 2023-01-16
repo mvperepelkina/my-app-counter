@@ -4,6 +4,7 @@ const Counter = ({ id, name, value, onIncrement, onDecrement, onDelete }) => {
     const formatCount = () => {
         return value === 0 ? "empty" : value;
     };
+
     const getBadgeClasses = () => {
         let classes = "badge m-2 ";
         classes += value === 0 ? "bg-warning" : "bg-primary";
